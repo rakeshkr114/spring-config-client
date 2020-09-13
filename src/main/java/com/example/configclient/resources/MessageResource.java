@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/rest")
 public class MessageResource {
 
-	@Value("${message}")	//: Default value
+	@Value("${message:Default value}")	//use default value of message not available
 	private String message;
 	
 	@GetMapping("/message")
